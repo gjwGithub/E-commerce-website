@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="css/validation.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <script type="text/javascript" src="js/order.js"></script>
+</head>
+
+<table> 
+    <form onsubmit="validateSubmit()" method="post" action="mailto:jiaweig3@uci.edu" enctype="text/plain">
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Shopping infomation</legend>
+                    Product identifier: <input type="text" id="identifier"> <span id="identifierError" class="error" aria-live="polite"></span> Quantity: <input type="number" id="quantity" min="1" max="10" step="1" value="1" onkeyup="validateQuantity()"> <span id="quantityError" class="error" aria-live="polite"></span><br><br> 
+                    Shipping method:<input type="radio" name="method" value="Overnight" checked> Overnight
+                    <input type="radio" name="method" value="2-days expedited"> 2-days expedited
+                    <input type="radio" name="method" value="6-days ground"> 6-days ground
+                </fieldset>
+                <br>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Customer infomation</legend>
+                    First name: <input type="text" id="firstname" onkeyup="validateFirstName()"> <span id="firstnameError" class="error" aria-live="polite"></span> Last name: <input type="text" id="lastname" onkeyup="validateLastName()"> <span id="lastnameError" class="error" aria-live="polite"></span><br><br>                    
+                    Phone number: <input type="number" id="phone" onkeyup="validatePhone()"> <span id="phoneError" class="error" aria-live="polite"></span><br><br>
+                    Zip Code: <input type="number" id="zip" onkeyup="validateZip()" onblur="processZip(this.value)" list="ziplist"> <span id="zipError" class="error" aria-live="polite"></span> Shipping address: <input type="text" id="address"> <span id="addressError" class="error" aria-live="polite"></span><br><br>                    
+                    Email: <input type="email" id="email" onkeyup="validateEmail()"><span class="error" aria-live="polite" id="emailError"></span>
+                </fieldset>
+                <datalist id="ziplist">
+                    
+                </datalist>
+                <br>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <fieldset>  
+                    <legend>Credit card infomation</legend>
+                    Card number: <input type="number" id="cardnumber" onkeyup="validateCardNumber()"> <span id="cardnumberError" class="error" aria-live="polite"></span> Secure number: <input type="number" id="securenumber" onkeyup="validateSecureNumber()"><span id="securenumberError" class="error" aria-live="polite"></span><br><br> 
+                    Card holder's name: <input type="text" id="holdername"> <span id="holdernameError" class="error" aria-live="polite"></span> Expiration date: <input type="month"id="expirationmonth"><span id="expirationmonthError" class="error" aria-live="polite"></span>
+                </fieldset>
+                <br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><input class="resetButton" type="reset"><input class="submitButton" type="submit" value="Submit"></td>
+        </tr>
+    </form>
+</table>

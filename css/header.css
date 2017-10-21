@@ -1,0 +1,115 @@
+body,
+html {
+    margin: 0;
+}
+
+.mybutton {
+    width: 60px;
+    height: 30px;
+    background-color: darkorange;
+    text-align: center;
+    position: relative;
+    float: left;
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 21px 20px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.mybutton:hover {
+    color: white;
+}
+
+.mybutton:after {
+    content: "";
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.mybutton:hover:after {
+    width: 120%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.button {
+    width: 140px;
+    height: 60px;
+    background-color: darkorange;
+    position: relative;
+    float: left;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background: darkorange;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    float: left;
+    height: 60px;
+    z-index: 999;
+    margin-bottom: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutus {
+    width: 82px;
+    height: 24px;
+    background-color: white;
+    padding-top: 5px;
+    top: 15px;
+    right: 20px;
+    position: relative;
+    float: right;
+    display: block;
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, .26);
+    border-radius: 4px;
+}
+
+.aboutus:hover:after {
+    background-color: dodgerblue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.aboutus:hover {
+    background-color: dodgerblue;
+    color: white;
+}

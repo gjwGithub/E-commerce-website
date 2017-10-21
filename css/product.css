@@ -1,0 +1,43 @@
+.submitButton{
+    background: darkorange;
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    color: white;
+    float: right;
+}
+.submitButton:hover{
+    background: blueviolet;
+    color: orangered;
+}
+.resetButton{
+    background: red;
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    color: white;
+    float: right;
+}
+.resetButton:hover{
+    background: blueviolet;
+    color: orangered;
+}
+.price{
+    color: red;
+    font-size: 200%;
+    font-weight: 600;
+}
+#overlay {
+    border: 1px solid black;
+    width: 320px;
+    height: 240px;
+    background-repeat: no-repeat;
+}
